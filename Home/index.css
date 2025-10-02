@@ -1,17 +1,21 @@
+/* CONFIG GERAL */
 * {
   padding: 0;
   margin: 0;
   left: 0;
   right: 0;
-} body {
+}
+body {
   overflow-x: hidden;
   background-color: #f1f1f1;
-  font-family: "Poppins", sans-serif; 
-  color: #30166B;
-
+  font-family: "Poppins", sans-serif;
+  color: #30166b;
 }
+html {
+  scroll-behavior: smooth;
+} /*FIM CONFIG GERAL */
 
-/* tipografia */
+/* TIPOGRAFIA */
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -22,12 +26,17 @@
   font-weight: 600;
   font-style: normal;
 }
-
 .lora {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+} /* FIM TIPOGRAFIA */
+
+/* NAVBAR */
+header {
+  position: fixed;
+  z-index: 100;
 }
 
 .navbarSuperior {
@@ -63,39 +72,48 @@
   gap: 40%;
 }
 
-.pesquisa {
-  margin: auto;
-  width: 35%;
-}
-
 .icons img {
   cursor: pointer;
   width: 55px;
   height: 30%;
 }
 
-.pesquisa input {
-  width: 150%;
-  height: 40%;
-  border-radius: 10px;
-  cursor: pointer;
+.pesquisa {
+  display: flex;
+  margin: auto;
+  background-color: #fff;
 
-}.pesquisa input:focus {
-  outline: none;
-}input::placeholder {
-  color: #30166B;
-  font-weight: 700;
+  width: 50%;
+  height: 30px;
+  padding: 3px;
+
+  /* border: 3px solid greenyellow; */
+  border-radius: 20px;
 }
 
-#lupa {
-  background: url("img/lupa.png") no-repeat left / 2em;
-  border-radius: 8px;
-  height: 25px;
-  width: 85%;
-  padding: 5px;
-  padding-left: 40px;
-  background-color: whitesmoke;
+.pesquisa input {
+  height: auto;
+  width: 100%;
+  padding-left: 10px;
+
   border: none;
+  border-radius: 20px;
+}.pesquisa input:focus {
+  outline: none;
+  border: none;
+}
+
+.pesquisa i {
+  cursor: pointer;
+  position: relative;
+
+  top: -2px;
+  width: 20px;
+  padding-inline: 10px;
+  
+  font-size: 24px;
+  font-weight: 600;
+  color: #30166b;
 }
 
 .subNavbar {
@@ -107,40 +125,49 @@
   text-decoration: none;
   height: 40px;
   width: 100%;
-} .subNavbar a {
+}
+.subNavbar a {
   text-decoration: none;
   font-weight: 600;
-  color:#30166B;
-  cursor: pointer;  
+  color: #30166b;
+  cursor: pointer;
+} /* FIM NAVBAR */
+
+/* MAIN */
+main {
+  width: 100%;
+  height: calc(100vh - 120px);
+  padding-top: 120px;
 }
 
 #bannerApagado {
   width: 100%;
 }
 
-.titulos{
+.titulos {
   font-family: "Lora", serif;
   margin: 5%;
-  font-size: 150%;
-}.titulos p{
+  font-size: 2.3rem;
+}
+.titulos p {
   font-family: "Poppins", sans-serif;
-} 
+}
 
-.titulo-centralizado{
+.titulo-centralizado {
   font-family: "Lora", serif;
   margin-top: 5%;
   font-size: 500%;
   font-weight: 100;
   text-align: center;
-  color: #F2D561;
+  color: #f2d561;
 }
 
-#Sobre{
+#Sobre {
   padding: 2%;
 }
 
-.sobre{
-  display: flex; 
+.sobre {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -148,92 +175,174 @@
   gap: 5%;
 }
 
-.sobre img{
+.sobre img {
   height: 350px;
 }
 
-.texto1{
+.texto1 {
   text-align: justify;
   text-indent: 2em; /* Isso cria um recuo de 2 vezes o tamanho da fonte no início do parágrafo */
-}.texto2{
+}
+.texto2 {
   text-align: justify;
   text-indent: 2em; /* Isso cria um recuo de 2 vezes o tamanho da fonte no início do parágrafo */
   color: white;
 }
 
-.mapinha iframe{
+.mapinha iframe {
   margin: 1% 3% 3% 3%;
   width: 94%;
   border-radius: 10px;
 }
 
-.mapinha p{
+.mapinha p {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  color: #30166B;
+  color: #30166b;
   margin-top: -2%;
 }
 
-#Objetivo{
+#Objetivo {
   margin-top: 5%;
   padding: 2%;
   height: 600px;
-  background-color: #30166B;
+  background-color: #30166b;
   box-shadow: 0px 2px 15px 5px #000;
 }
 
-.dados{
+.meio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dados {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-} .dados input{
+}
+.dados input {
   height: 40px;
-  width: 250px;
-  background-color: #30166B;
+  width: 282px;
+  background-color: #30166b;
   border-radius: 10px;
-  border: 2px solid #F2D561;
-} .dados input::placeholder{
-  color: #F2D561;
+  border: 2px solid #f2d561;
+}
+.dados input::placeholder {
+  color: #f2d561;
   font-weight: 200;
   font-size: 150%;
   padding: 5%;
   font-family: "Poppins", sans-serif;
 }
 
-.mensagem{
+.mensagem {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-}.mensagem input{
+}
+.mensagem input {
   height: 380px;
   width: 77%;
   margin: 2%;
-  background-color: #30166B;
+  background-color: #30166b;
   border-radius: 10px;
-  border: 2px solid #F2D561;
-}.mensagem input::placeholder{
-  color: #F2D561;
+  border: 2px solid #f2d561;
+}
+.mensagem i {
+  z-index: 5;
+  position: absolute;
+  cursor: pointer;
+
+  font-size: 36px;
+  width: 40px;
+  margin-top: 300px;
+  margin-left: 83.5%;
+  padding: 10px;
+
+  color: #f2d561;
+  /* border: 5px solid red; */
+}
+.mensagem input::placeholder {
+  color: #f2d561;
   font-weight: 200;
   font-size: 150%;
   padding: 3%;
   font-family: "Poppins", sans-serif;
 }
 
-.rodapeSugestoes{
+.rodapeSugestoes {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.icone1, .icone2{
+.icone1,
+.icone2 {
   display: flex;
   flex-direction: row;
 }
 
-#iconsSugestao{
+#iconsSugestao {
   height: 50%;
+}
+
+#Grupo {
+  margin-top: 5%;
+  padding: 2%;
+  height: 450px;
+  background-color: #f2d561;
+  box-shadow: 0px 2px 15px 5px #000;
+}
+
+.fotoNossas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fotinhos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fotinhos img {
+  height: 150px;
+  margin: 2%;
+} /* FIM MAIN */
+
+
+/* INICIO RODAPÉ */
+#Rodape{
+  background-color: #30166b;
+  color: white;
+  height: 180px;
+  display: flex;
+  flex-direction: column; 
+  padding-inline: 5%;
+  border: 5px solid black;  /* tem que mexer aq */
+}
+
+.conteudo-rodape{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3%;
+} .conteudo-rodape a{
+  color: white;
+}
+
+.direitos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
