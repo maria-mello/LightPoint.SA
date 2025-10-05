@@ -87,7 +87,6 @@ header {
   height: 30px;
   padding: 3px;
 
-  /* border: 3px solid greenyellow; */
   border-radius: 20px;
 }
 
@@ -245,16 +244,14 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-}
-.mensagem input {
+}.mensagem input {
   height: 380px;
   width: 77%;
   margin: 2%;
   background-color: #30166b;
   border-radius: 10px;
   border: 2px solid #f2d561;
-}
-.mensagem i {
+}.mensagem i {
   z-index: 5;
   position: absolute;
   cursor: pointer;
@@ -266,9 +263,7 @@ main {
   padding: 10px;
 
   color: #f2d561;
-  /* border: 5px solid red; */
-}
-.mensagem input::placeholder {
+}.mensagem input::placeholder {
   color: #f2d561;
   font-weight: 200;
   font-size: 150%;
@@ -300,6 +295,13 @@ main {
   box-shadow: 0px 2px 15px 5px #000;
 }
 
+.meio2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5%;
+}
 .fotoNossas {
   display: flex;
   flex-direction: row;
@@ -312,8 +314,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.fotinhos img {
+}.fotinhos img {
   height: 150px;
   margin: 2%;
 } /* FIM MAIN */
@@ -323,11 +324,13 @@ main {
 #Rodape{
   background-color: #30166b;
   color: white;
-  height: 180px;
+  height: 30vh;
   display: flex;
   flex-direction: column; 
-  padding-inline: 5%;
-  border: 5px solid black;  /* tem que mexer aq */
+  padding-inline: -50px;
+  border-top: 10px solid #f2d561; /* tem que mexer aq */
+  border-top-right-radius: 20px;
+  margin-top: 5%;
 }
 
 .conteudo-rodape{
