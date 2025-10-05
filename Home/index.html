@@ -36,8 +36,8 @@
           </div>
 
           <div class="icons">
-            <img src="img/carrinho.png" alt="carrinho" id="carrinho" />
-            <img src="img/usuario.png" alt="usuario" id="usuario" />
+            <img src="img/carrinho.png" alt="carrinho" id="carrinho" onclick="abrirCarrinho()"/>
+            <img src="img/usuario.png" alt="usuario" id="usuario" onclick="irCadastro()"/>
           </div>
         </div>
       </div>
@@ -54,7 +54,8 @@
 
     <main>
       <div class="banner">
-        <img src="img/bannerApagado.png" alt="bannerNormal" id="bannerApagado"/>
+        <img src="img/bannerApagado.png" alt="bannerNormal" id="bannerApagado" class="banner-base">
+        <img src="img/bannerAceso.png" alt="bannerAceso" id="bannerAceso" class="banner-hover">
       </div>
 
       <section id="Sobre">
@@ -226,16 +227,35 @@
 
       <section id="Rodape"> 
           <div class="conteudo-rodape">
-            <a href="" alt="Youtube"> YouTube </a>
-            <a href="" alt="Instagram"> Instagram </a>
-            <a href="" alt="Facebook "> Facebook </a>
-            <a href="" alt="WhatsApp"> WhatsApp </a>
-            <a href="" alt="Termos e Condições"> Termos e Condições </a>
+            <a href="https://www.instagram.com/" alt="Instagram"> Instagram </a>
+            <a href="https://www.whatsapp.com/?lang=pt" alt="WhatsApp"> WhatsApp </a>
+            <a href="https://www.facebook.com/" alt="Facebook "> Facebook </a>
+            <a href="https://www.youtube.com/" alt="Youtube"> YouTube </a>
+            <a href="img/TERMOS E CONDIÇÕES DE USO – LIGHT POINT.pdf" alt="Termos e Condições"> Termos e Condições </a>
           </div>
           <div class="direitos">
             <p> © 2025 LightPoint. Todos os direitos reservados. </p>
           </div>
       </section>
     </main>
+
+    <div id="modalCarrinho" class="modal-carrinho">
+        <div class="modal-content1">
+            <span class="close" onclick="fecharModalCarrinho()">&times;</span>
+                <h2>Carrinho de compras</h2>
+                <div id="carrinho-itens"></div>
+                <p id="carrinho-vazio">O carrinho está vazio no momento.</p>
+            </div>
+    </div>
+
+    <div id="modalUsuario" class="modal-usuario">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModalUsuario()"><i class="bi bi-x-circle"></i></span>
+                <p>Já possui cadastro? </p>
+                <a href=> Acesse sua conta </a> 
+                <button onclick="entrarConta()" class="entrarBtn"> Entrar </button>
+                <p> Cliente novo? </p> <a href=""> Cadastrar</a>
+        </div>
+     </div> <!-- Tem que terminar essa merdinha -->
   </body>
 </html>
