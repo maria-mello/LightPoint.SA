@@ -204,6 +204,12 @@ main {
   height: 350px;
 }
 
+.imgPoste img{
+  border-radius: 30px;
+  height: 500px;
+  display: block;
+}
+
 .texto1 {
   text-align: justify;
   text-indent: 2em; /* Isso cria um recuo de 2 vezes o tamanho da fonte no início do parágrafo */
@@ -214,7 +220,6 @@ main {
   text-indent: 2em; /* Isso cria um recuo de 2 vezes o tamanho da fonte no início do parágrafo */
   color: white;
   font-size: 150%;
-
 }
 
 .mapinha iframe {
@@ -235,10 +240,17 @@ main {
 #Objetivo {
   margin-top: 5%;
   padding: 2%;
-  height: 750px;
+  height: 851px;
   background-color: #30166b;
   box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.3), /* Sombra em cima */
   0 10px 15px rgba(0, 0, 0, 0.3); /* Sombra embaixo */
+}
+
+.imgPoste2 img{
+  border-radius: 30px;
+  height: 500px;
+  display: block;
+
 }
 
 .meio {
@@ -478,3 +490,4 @@ main {
   color: #30166B;
 }
  /*Fim do modal de uusário*/
+
