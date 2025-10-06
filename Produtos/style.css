@@ -1,0 +1,348 @@
+/* CONFIG GERAL */
+* {
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+body {
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  color: #30166b;
+}
+html {
+  scroll-behavior: smooth;
+} /*FIM CONFIG GERAL */
+
+/* TIPOGRAFIA */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+} /* FIM TIPOGRAFIA */
+
+/* NAVBAR */
+header {
+  position: fixed;
+  z-index: 100;
+}
+
+.navbarSuperior {
+  background-color: #30166b;
+  margin: auto;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Sombra embaixo */
+}
+
+.box-img {
+  width: 50%;
+}
+
+.box-img img {
+  margin: auto;
+  height: 95%;
+  margin-left: 10%;
+}
+
+.pesquisaEicons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.icons {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  gap: 40%;
+}
+
+.icons img {
+  cursor: pointer;
+  width: 55px;
+  height: 30%;
+}
+
+.pesquisa {
+  display: flex;
+  margin: auto;
+  background-color: #fff;
+
+  width: 50%;
+  height: 30px;
+  padding: 3px;
+
+  border-radius: 20px;
+}
+
+.pesquisa input {
+  height: auto;
+  width: 100%;
+  padding-left: 10px;
+
+  border: none;
+  border-radius: 20px;
+}.pesquisa input:focus {
+  outline: none;
+  border: none;
+}
+
+.pesquisa i {
+  cursor: pointer;
+  position: relative;
+
+  top: -2px;
+  width: 20px;
+  padding-inline: 10px;
+  
+  font-size: 24px;
+  font-weight: 600;
+  color: #30166b;
+}
+
+.subNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0 0 15px 15px;
+  background-color: #f2d561;
+  text-decoration: none;
+  height: 40px;
+  width: 100%;
+}
+.subNavbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #30166b;
+  cursor: pointer;
+} /* FIM NAVBAR */
+
+/* MAIN */
+main {
+  width: 100%;
+  height: calc(100vh - 120px);
+  padding-top: 120px;
+}
+
+.banner:hover .banner-hover {
+    opacity: 1; /* aparece quando o mouse passa */
+}
+.banner{
+    position: relative;
+    width: 100%; /* largura do banner */
+    height: 60vh; /* altura do banner */
+    overflow: hidden; 
+}
+
+#bannerApagado {
+  width: 100%;
+} .banner-base {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#bannerAceso {
+  width: 100%;
+} .banner-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease; /* faz a transição */
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INICIO DOS PRODUTOS COM FUNDO BRANCO */
+.produto1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    gap: 2%;
+}
+
+.informaçoes{
+    width: 50%;
+    padding: 2%;
+}
+
+.titulos1{
+  font-family: "Lora", serif;
+  font-size: 180%;
+  font-weight: 200;
+}
+
+.descricoes1{
+  text-align: justify;
+  font-size: 130%;
+  font-weight: 600;
+}
+
+.botoes1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    margin-top: -2%;
+}
+
+.roxo{
+    background-color: #30166b;
+    border-radius: 20px;
+    border: 2px solid #f1f1f1;
+    font-size: 150%;
+    color: #F7D464;
+    height: 30%;
+    width: 40%;
+    font-family: "Poppins", sans-serif; 
+    transition: transform 0.3s ease;
+}
+/* FIM DOS PRODUTOS COM FUNDO BRANCO */
+
+/* INICIO DOS PRODUTOS COM FUNDO ROXO */
+.produto2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #30166b;
+    width: 100%;
+    height: 70vh;
+    gap: 2%;
+}
+
+.titulos2{
+  font-family: "Lora", serif;
+  font-size: 180%;
+  font-weight: 200;
+  color: #F2D561;
+}
+
+.descricoes2{
+  text-align: justify;
+  font-size: 130%;
+  font-weight: 600;
+  color: #fff;
+}
+
+.botoes2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    margin-top: -2%;
+}
+
+.Amarelo{
+    background-color: #F2D561;
+    border-radius: 20px;
+    border: 2px solid #f1f1f1;
+    font-size: 150%;
+    color: #30166B;
+    height: 30%;
+    width: 40%;
+    font-family: "Poppins", sans-serif; 
+    transition: transform 0.4s ease;
+}
+
+.roxo:hover, .Amarelo:hover{
+  transform: translateY(-5px);
+  transition: transform 0.4s ease out; 
+}
+/* FIM DOS PRODUTOS COM FUNDO ROXO */
+
+/* INICIO RODAPÉ */
+#Rodape{
+  display: flex;
+  flex-direction: column; 
+
+  background-color: #30166b;
+  color: white;
+
+  border-top: 10px solid #f2d561; /* tem que mexer aq */
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 0 -10px 10px 0px gray;
+
+  height: 18vh;
+}
+
+.conteudo-rodape{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  gap: 5%
+} .conteudo-rodape a{
+  color: white;
+  font-size: 120%;
+}
+
+.direitos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* FIM RODAPÉ */
+
+/*Inicio do modal de carrinho*/
+.modal-carrinho {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo */
+}.modal-content1 {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+} 
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}/*Fim do modal de carrinho*/
