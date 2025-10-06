@@ -18,7 +18,7 @@ window.onclick = function (event) {
   const modalUsuario = document.getElementById("modalUsuario");
 
   if (event.target === modalCarrinho) modalCarrinho.style.display = "none";
-  if (event.target === modalUsuario) modalUsuario.style.display = "none";
+  if (event.target === modalUsuario) modalUsuario.style.display = "none", modalUsuario.style.overflowY= "hidden";
 };
 
 function entrarConta(){
