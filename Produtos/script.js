@@ -21,6 +21,10 @@ window.onclick = function (event) {
   if (event.target === modalUsuario) modalUsuario.style.display = "none";
 };
 
-function entrarConta(){
-    window.location.href = "../Cadastro-Login/index.html";
+function entrarConta() {
+  window.location.href = "../Cadastro-Login/index.html";
+}
+
+function irProduto(){
+  window.location.href = "../Produto-Individual/produto.html";
 }

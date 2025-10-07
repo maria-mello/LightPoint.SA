@@ -448,7 +448,7 @@ main {
 /*Inicio do modal de usuario */
 .modal-usuario { 
   display: none;
-  position: absolute;
+  position: fixed;
   top: 102px;     /* distância do topo */
   left: 81.9%;   /* distância da lateral */
   z-index: 999;
@@ -497,5 +497,5 @@ main {
   background-color: #F2D561;
   color: #30166B;
 }
- /*Fim do modal de uusário*/
+ /*Fim do modal de usuário*/
 

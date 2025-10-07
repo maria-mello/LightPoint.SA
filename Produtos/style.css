@@ -5,15 +5,19 @@
   left: 0;
   right: 0;
 }
+
 body {
   overflow-x: hidden;
   background-color: #f1f1f1;
   font-family: "Poppins", sans-serif;
   color: #30166b;
 }
+
 html {
   scroll-behavior: smooth;
-} /*FIM CONFIG GERAL */
+}
+
+/*FIM CONFIG GERAL */
 
 /* TIPOGRAFIA */
 .poppins-regular {
@@ -21,17 +25,21 @@ html {
   font-weight: 400;
   font-style: normal;
 }
+
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
+
 .lora {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-} /* FIM TIPOGRAFIA */
+}
+
+/* FIM TIPOGRAFIA */
 
 /* NAVBAR */
 header {
@@ -45,7 +53,8 @@ header {
   height: 120px;
   width: 100%;
   display: flex;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Sombra embaixo */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  /* Sombra embaixo */
 }
 
 .box-img {
@@ -97,7 +106,9 @@ header {
 
   border: none;
   border-radius: 20px;
-}.pesquisa input:focus {
+}
+
+.pesquisa input:focus {
   outline: none;
   border: none;
 }
@@ -109,7 +120,7 @@ header {
   top: -2px;
   width: 20px;
   padding-inline: 10px;
-  
+
   font-size: 24px;
   font-weight: 600;
   color: #30166b;
@@ -125,12 +136,15 @@ header {
   height: 40px;
   width: 100%;
 }
+
 .subNavbar a {
   text-decoration: none;
   font-weight: 600;
   color: #30166b;
   cursor: pointer;
-} /* FIM NAVBAR */
+}
+
+/* FIM NAVBAR */
 
 /* MAIN */
 main {
@@ -140,153 +154,170 @@ main {
 }
 
 .banner:hover .banner-hover {
-    opacity: 1; /* aparece quando o mouse passa */
+  opacity: 1;
+  /* aparece quando o mouse passa */
 }
-.banner{
-    position: relative;
-    width: 100%; /* largura do banner */
-    height: 60vh; /* altura do banner */
-    overflow: hidden; 
+
+.banner {
+  position: relative;
+  width: 100%;
+  /* largura do banner */
+  height: 60vh;
+  /* altura do banner */
+  overflow: hidden;
 }
 
 #bannerApagado {
   width: 100%;
-} .banner-base {
-    width: 100%;
-    height: 100%;
-    display: block;
+}
+
+.banner-base {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 #bannerAceso {
   width: 100%;
-} .banner-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease; /* faz a transição */
 }
 
-.all{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.banner-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  /* faz a transição */
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* INICIO DOS PRODUTOS COM FUNDO BRANCO */
-.produto1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-    gap: 2%;
+.produto1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  gap: 2%;
 }
 
-.informaçoes{
-    width: 50%;
-    padding: 2%;
+.informaçoes {
+  width: 50%;
+  padding: 2%;
 }
 
-.titulos1{
+.titulos1 {
   font-family: "Lora", serif;
   font-size: 180%;
   font-weight: 200;
 }
 
-.descricoes1{
+.descricoes1 {
   text-align: justify;
   font-size: 130%;
   font-weight: 600;
 }
 
-.botoes1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20vh;
-    margin-top: -2%;
+.botoes1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  margin-top: -2%;
 }
 
-.roxo{
-    background-color: #30166b;
-    border-radius: 20px;
-    border: 2px solid #f1f1f1;
-    font-size: 150%;
-    color: #F7D464;
-    height: 30%;
-    width: 40%;
-    font-family: "Poppins", sans-serif; 
-    transition: transform 0.3s ease;
+.roxo {
+  background-color: #30166b;
+  border-radius: 20px;
+  border: 2px solid #f1f1f1;
+  font-size: 150%;
+  color: #F7D464;
+  height: 30%;
+  width: 40%;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.3s ease;
 }
+
 /* FIM DOS PRODUTOS COM FUNDO BRANCO */
 
 /* INICIO DOS PRODUTOS COM FUNDO ROXO */
-.produto2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #30166b;
-    width: 100%;
-    height: 70vh;
-    gap: 2%;
+.produto2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #30166b;
+  width: 100%;
+  height: 70vh;
+  gap: 2%;
 }
 
-.titulos2{
+.titulos2 {
   font-family: "Lora", serif;
   font-size: 180%;
   font-weight: 200;
   color: #F2D561;
+  margin-left: 8.3%;
+
 }
 
-.descricoes2{
+.descricoes2 {
   text-align: justify;
   font-size: 130%;
   font-weight: 600;
   color: #fff;
+  margin-left: 8.3%;
+
 }
 
-.botoes2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20vh;
-    margin-top: -2%;
+.botoes2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  margin-top: -2%;
 }
 
-.Amarelo{
-    background-color: #F2D561;
-    border-radius: 20px;
-    border: 2px solid #f1f1f1;
-    font-size: 150%;
-    color: #30166B;
-    height: 30%;
-    width: 40%;
-    font-family: "Poppins", sans-serif; 
-    transition: transform 0.4s ease;
+.Amarelo {
+  background-color: #F2D561;
+  border-radius: 20px;
+  border: 2px solid #f1f1f1;
+  font-size: 150%;
+  color: #30166B;
+  height: 30%;
+  width: 40%;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.4s ease;
 }
 
-.roxo:hover, .Amarelo:hover{
+.roxo:hover,
+.Amarelo:hover {
   transform: translateY(-5px);
-  transition: transform 0.4s ease out; 
+  transition: transform 0.4s ease out;
 }
+
 /* FIM DOS PRODUTOS COM FUNDO ROXO */
 
 /* INICIO RODAPÉ */
-#Rodape{
+#Rodape {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 
   background-color: #30166b;
   color: white;
 
-  border-top: 10px solid #f2d561; /* tem que mexer aq */
+  border-top: 10px solid #f2d561;
+  /* tem que mexer aq */
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   box-shadow: 0 -10px 10px 0px gray;
@@ -294,7 +325,7 @@ main {
   height: 18vh;
 }
 
-.conteudo-rodape{
+.conteudo-rodape {
   color: white;
   display: flex;
   flex-direction: row;
@@ -302,20 +333,25 @@ main {
   align-items: center;
   margin: 2%;
   gap: 5%
-} .conteudo-rodape a{
+}
+
+.conteudo-rodape a {
   color: white;
   font-size: 120%;
 }
 
-.direitos{
+.direitos {
   display: flex;
   justify-content: center;
   align-items: center;
-} /* FIM RODAPÉ */
+}
+
+/* FIM RODAPÉ */
 
 /*Inicio do modal de carrinho*/
 .modal-carrinho {
-  display: none; /* Escondido por padrão */
+  display: none;
+  /* Escondido por padrão */
   position: fixed;
   z-index: 999;
   left: 0;
@@ -323,16 +359,19 @@ main {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo */
-}.modal-content1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fundo */
+}
+
+.modal-content1 {
   background-color: #fff;
   margin: 10% auto;
   padding: 30px;
   border-radius: 10px;
   width: 40%;
   font-family: 'Poppins', sans-serif;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-} 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
 .close {
   color: #aaa;
@@ -345,4 +384,74 @@ main {
 .close:hover,
 .close:focus {
   color: black;
-}/*Fim do modal de carrinho*/
+}
+
+/*Fim do modal de carrinho*/
+
+/*Inicio do modal de usuario */
+.modal-usuario {
+  display: none;
+  position: fixed;
+  top: 102px;
+  /* distância do topo */
+  left: 81.9%;
+  /* distância da lateral */
+  z-index: 999;
+}
+
+.modal-content {
+  border: 2px solid #fff;
+  position: relative;
+  width: 190px;
+  height: auto;
+  background-color: #30166B;
+  color: white;
+  border-radius: 12px;
+  padding: 25px 35px;
+  text-align: center;
+}
+
+.modal-content p {
+  color: white;
+  margin-top: 10px;
+}
+
+.modal-content a {
+  color: #F2D561;
+}
+
+.modal-content::before {
+  /* Triângulo amarelo */
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: 30px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #F2D561;
+}
+
+.modal-content span {
+  font-size: 20px;
+  margin: -7% -10% 0 0%;
+}
+
+.entrarBtn {
+  background-color: transparent;
+  color: #D9D9D9;
+  border: 2px solid #F2D561;
+  border-radius: 20px;
+  width: 85%;
+  height: 5vh;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 120%;
+  margin-top: 10px;
+}
+
+.entrarBtn:hover {
+  background-color: #F2D561;
+  color: #30166B;
+}
+
+/*Fim do modal de usuário*/

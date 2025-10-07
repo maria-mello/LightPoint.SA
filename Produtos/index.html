@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Light-Point</title>
@@ -11,166 +12,198 @@
     <!-- fonte do títulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link  href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
     <!-- fonte do corpo -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="navbarSuperior">
-        <div class="box-img">
-          <img
-            src="img/logoSuperior.png"
-            alt="logoSuperior"
-            id="logoSuperior"
-          />
+        <div class="navbarSuperior">
+            <div class="box-img">
+                <img src="img/logoSuperior.png" alt="logoSuperior" id="logoSuperior" />
+            </div>
+
+            <div class="pesquisaEicons">
+                <div class="pesquisa">
+                    <i class="bi bi-search"></i>
+                    <input type="text" id="lupa" placeholder="Pesquisar" />
+                </div>
+
+                <div class="icons">
+                    <img src="img/carrinho.png" alt="carrinho" id="carrinho" onclick="abrirCarrinho()" />
+                    <img src="img/usuario.png" alt="usuario" id="usuario" onclick="irCadastro()" />
+                </div>
+            </div>
         </div>
 
-        <div class="pesquisaEicons">
-          <div class="pesquisa">
-            <i class="bi bi-search"></i>
-            <input type="text" id="lupa" placeholder="Pesquisar" />
-          </div>
-
-          <div class="icons">
-            <img src="img/carrinho.png" alt="carrinho" id="carrinho" onclick="abrirCarrinho()"/>
-            <img src="img/usuario.png" alt="usuario" id="usuario" onclick="irCadastro()"/>
-          </div>
+        <div class="subNavbar">
+            <a href="../Home/index.html"> Sobre </a>
+            <a href="../Home/index.html"> Mapa </a>
+            <a href="../Home/index.html"> Objetivo </a>
+            <a href="#../Home/index.html"> Sugestões </a>
+            <a href="index.html"> Produtos </a>
+            <a href="../Home/index.html"> Grupo </a>
         </div>
-      </div>
-
-      <div class="subNavbar">
-        <a href="../Home/index.html"> Sobre </a>
-        <a href="../Home/index.html"> Mapa </a>
-        <a href="../Home/index.html"> Objetivo </a>
-        <a href="#../Home/index.html"> Sugestões </a>
-        <a href="index.html"> Produtos </a>
-        <a href="../Home/index.html"> Grupo </a>
-      </div>
     </header>
 
     <main>
-      <div class="banner">
-        <img src="img/bannerApagado.png" alt="bannerNormal" id="bannerApagado" class="banner-base">
-        <img src="img/bannerAceso.png" alt="bannerAceso" id="bannerAceso" class="banner-hover">
-      </div>
-
-    <section class="all">
-        <div class="produto1"> <!-- produto 1 -->
-            <div class="imagem1">
-                <img src="img/ImgProdutos/imagem1.png" alt="produto1">
-            </div>
-
-            <div class="informaçoes">
-                <div class="titulos1">
-                    <h1> Iluminação Inteligente <br> LED </h1>
-                </div>
-                <div class="descricoes1"> 
-                    <p> Aumente a eficiência energética e a segurança do seu ambiente com nossas lâmpadas LED, que vêm equipadas com sensores de movimento e de hora. Essas lâmpadas detectam automaticamente a presença de pessoas, ajustando a iluminação conforme necessário, o que resulta em economia de energia e conforto. </p>
-                </div>
-                <div class="botoes1">
-                    <button onclick="" class="roxo"> Saiba mais </button>
-                </div>
-            </div>
+        <div class="banner">
+            <img src="img/bannerApagado.png" alt="bannerNormal" id="bannerApagado" class="banner-base">
+            <img src="img/bannerAceso.png" alt="bannerAceso" id="bannerAceso" class="banner-hover">
         </div>
 
-        <div class="produto2"> <!-- produto 2 -->
-            <div class="informaçoes">
-                <div class="titulos2">
-                    <h1> Hardware de Arduino </h1>
+        <section class="all">
+            <div class="produto1"> <!-- produto 1 -->
+                <div class="imagem1">
+                    <img src="img/ImgProdutos/imagem1.png" alt="produto1">
                 </div>
-                <div class="descricoes2"> 
-                    <p> Maximize suas criações com nosso Hardware de Arduino individual. Projetado para facilitar o desenvolvimento de projetos eletrônicos, ele oferece flexibilidade e potência. Ideal para protótipos e aplicações personalizadas, o Arduino é compatível com uma vasta gama de sensores e módulos. Maximize suas criações com nosso produto!  </p>
-                </div>
-                <div class="botoes2">
-                    <button onclick="" class="Amarelo"> Saiba mais </button>
+
+                <div class="informaçoes">
+                    <div class="titulos1">
+                        <h1> Iluminação Inteligente <br> LED </h1>
+                    </div>
+                    <div class="descricoes1">
+                        <p> Aumente a eficiência energética e a segurança do seu ambiente com nossas lâmpadas LED, que
+                            vêm equipadas com sensores de movimento e de hora. Essas lâmpadas detectam automaticamente a
+                            presença de pessoas, ajustando a iluminação conforme necessário, o que resulta em economia
+                            de energia e conforto. </p>
+                    </div>
+                    <div class="botoes1">
+                        <button onclick="irProduto(1)" class="roxo"> Saiba mais </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="imagem2">
-                <img src="img/ImgProdutos/imagem2.png" alt="produto2">
-            </div>
-        </div>
+            <div class="produto2"> <!-- produto 2 -->
+                <div class="informaçoes">
+                    <div class="titulos2">
+                        <h1> Hardware de Arduino </h1>
+                    </div>
+                    <div class="descricoes2">
+                        <p> Maximize suas criações com nosso Hardware de Arduino individual. Projetado para facilitar o
+                            desenvolvimento de projetos eletrônicos, ele oferece flexibilidade e potência. Ideal para
+                            protótipos e aplicações personalizadas, o Arduino é compatível com uma vasta gama de
+                            sensores e módulos. Maximize suas criações com nosso produto! </p>
+                    </div>
+                    <div class="botoes2">
+                        <button onclick="irProduto(2)" class="Amarelo"> Saiba mais </button>
+                    </div>
+                </div>
 
-        <div class="produto1"> <!-- produto 3 -->
-            <div class="imagem1">
-                <img src="img/ImgProdutos/imagem3.png" alt="produto3">
-            </div>
-
-            <div class="informaçoes">
-                <div class="titulos1">
-                    <h1> Minicélula Solar </h1>
-                </div>
-                <div class="descricoes1"> 
-                    <p> Otimize seu projeto com nossa minicélula solar que se encaixa perfeitamente na caixa de Arduino. Ela capta luz solar e a converte em energia elétrica, proporcionando uma fonte sustentável e renovável. Compacta e eficiente, é ideal para aplicações em campo, garantindo que seu Arduino funcione continuamente. Transforme seu projeto em uma solução ecológica e autossuficiente! </p>
-                </div>
-                <div class="botoes1">
-                    <button onclick="" class="roxo"> Saiba mais </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="produto2"> <!-- produto 4 -->
-            <div class="informaçoes">
-                <div class="titulos2">
-                    <h1> Sensor de movimento </h1>
-                </div>
-                <div class="descricoes2"> 
-                    <p> Este sensor de movimento é especialmente desenvolvido para lâmpadas inteligentes, captando apenas o movimento e o calor das pessoas. Projetado para não reagir a gotas de água ou outros elementos ambientais, ele garante maior precisão e evita acionamentos falsos. Com isso, otimiza o uso da energia, acionando a luz somente quando necessário, promovendo economia e conforto. </p>
-                </div>
-                <div class="botoes2">
-                    <button onclick="" class="Amarelo"> Saiba mais </button>
+                <div class="imagem2">
+                    <img src="img/ImgProdutos/imagem2.png" alt="produto2">
                 </div>
             </div>
 
-            <div class="imagem2">
-                <img src="img/ImgProdutos/imagem4.png" alt="produto2">
-            </div>
-        </div>
-
-        <div class="produto1"> <!-- produto 5 -->
-            <div class="imagem1">
-                <img src="img/ImgProdutos/imagem5.png" alt="produto3">
-            </div>
-
-            <div class="informaçoes">
-                <div class="titulos1">
-                    <h1> Poste Sensorial </h1>
+            <div class="produto1"> <!-- produto 3 -->
+                <div class="imagem1">
+                    <img src="img/ImgProdutos/imagem3.png" alt="produto3">
                 </div>
-                <div class="descricoes1"> 
-                    <p> Este poste inteligente ajusta automaticamente a intensidade da luz conforme o número de pessoas detectadas e reduz a iluminação à noite, com base no fluxo de trânsito. Equipado com uma placa solar, armazena energia em baterias para funcionar por até 2 horas em caso de queda no fornecimento elétrico. Assim, promove economia, segurança e sustentabilidade. </p>
-                </div>
-                <div class="botoes1">
-                    <button onclick="" class="roxo"> Saiba mais </button>
+
+                <div class="informaçoes">
+                    <div class="titulos1">
+                        <h1> Minicélula Solar </h1>
+                    </div>
+                    <div class="descricoes1">
+                        <p> Otimize seu projeto com nossa minicélula solar que se encaixa perfeitamente na caixa de
+                            Arduino. Ela capta luz solar e a converte em energia elétrica, proporcionando uma fonte
+                            sustentável e renovável. Compacta e eficiente, é ideal para aplicações em campo, garantindo
+                            que seu Arduino funcione continuamente. Transforme seu projeto em uma solução ecológica e
+                            autossuficiente! </p>
+                    </div>
+                    <div class="botoes1">
+                        <button onclick="irProduto(3)" class="roxo"> Saiba mais </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="Rodape"> 
-          <div class="conteudo-rodape">
-            <a href="https://www.instagram.com/" alt="Instagram"> Instagram </a>
-            <a href="https://www.whatsapp.com/?lang=pt" alt="WhatsApp"> WhatsApp </a>
-            <a href="https://www.facebook.com/" alt="Facebook "> Facebook </a>
-            <a href="https://www.youtube.com/" alt="Youtube"> YouTube </a>
-            <a href="img/TERMOS E CONDIÇÕES DE USO – LIGHT POINT.pdf" alt="Termos e Condições"> Termos e Condições </a>
-          </div>
-          <div class="direitos">
-            <p> © 2025 LightPoint. Todos os direitos reservados. </p>
-          </div>
-      </section>
+            <div class="produto2"> <!-- produto 4 -->
+                <div class="informaçoes">
+                    <div class="titulos2">
+                        <h1> Sensor de movimento </h1>
+                    </div>
+                    <div class="descricoes2">
+                        <p> Este sensor de movimento é especialmente desenvolvido para lâmpadas inteligentes, captando
+                            apenas o movimento e o calor das pessoas. Projetado para não reagir a gotas de água ou
+                            outros elementos ambientais, ele garante maior precisão e evita acionamentos falsos. Com
+                            isso, otimiza o uso da energia, acionando a luz somente quando necessário, promovendo
+                            economia e conforto. </p>
+                    </div>
+                    <div class="botoes2">
+                        <button onclick="irProduto(4)" class="Amarelo"> Saiba mais </button>
+                    </div>
+                </div>
+
+                <div class="imagem2">
+                    <img src="img/ImgProdutos/imagem4.png" alt="produto2">
+                </div>
+            </div>
+
+            <div class="produto1"> <!-- produto 5 -->
+                <div class="imagem1">
+                    <img src="img/ImgProdutos/imagem5.png" alt="produto3">
+                </div>
+
+                <div class="informaçoes">
+                    <div class="titulos1">
+                        <h1> Poste Sensorial </h1>
+                    </div>
+                    <div class="descricoes1">
+                        <p> Este poste inteligente ajusta automaticamente a intensidade da luz conforme o número de
+                            pessoas detectadas e reduz a iluminação à noite, com base no fluxo de trânsito. Equipado com
+                            uma placa solar, armazena energia em baterias para funcionar por até 2 horas em caso de
+                            queda no fornecimento elétrico. Assim, promove economia, segurança e sustentabilidade. </p>
+                    </div>
+                    <div class="botoes1">
+                        <button onclick="irProduto(5)" class="roxo"> Saiba mais </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Rodape">
+            <div class="conteudo-rodape">
+                <a href="https://www.instagram.com/" alt="Instagram"> Instagram </a>
+                <a href="https://www.whatsapp.com/?lang=pt" alt="WhatsApp"> WhatsApp </a>
+                <a href="https://www.facebook.com/" alt="Facebook "> Facebook </a>
+                <a href="https://www.youtube.com/" alt="Youtube"> YouTube </a>
+                <a href="img/TERMOS E CONDIÇÕES DE USO – LIGHT POINT.pdf" alt="Termos e Condições"> Termos e Condições
+                </a>
+            </div>
+            <div class="direitos">
+                <p> © 2025 LightPoint. Todos os direitos reservados. </p>
+            </div>
+        </section>
     </main>
-    
+
+    <!-- MODAL DE CARRINHO -->
     <div id="modalCarrinho" class="modal-carrinho">
         <div class="modal-content1">
             <span class="close" onclick="fecharModalCarrinho()">&times;</span>
-                <h2>Carrinho de compras</h2>
-                <div id="carrinho-itens"></div>
-                <p id="carrinho-vazio">O carrinho está vazio no momento.</p>
-            </div>
+            <h2>Carrinho de compras</h2>
+            <div id="carrinho-itens"></div>
+            <p id="carrinho-vazio">O carrinho está vazio no momento.</p>
+        </div>
+    </div>
+
+    <!-- MODAL DE USUÁRIO -->
+    <div id="modalUsuario" class="modal-usuario">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModalUsuario()"><i class="bi bi-x-circle"></i></span>
+            <p>Já possui cadastro? </p>
+            <a href="../Cadastro-Login/index.html"> Acesse sua conta </a>
+            <button onclick="entrarConta()" class="entrarBtn"> Entrar </button>
+            <p> Cliente novo? </p> <a href="../Cadastro-Login/index.html"> Cadastrar</a>
+        </div>
     </div>
 </body>
+
 </html>
