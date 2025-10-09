@@ -152,21 +152,43 @@ main {
 }
 
 .all{
-  margin: 5%;
   border-radius: 20px;
   background-color: #fff;
+  
+  width: 80%;
   height: 90vh;
+  margin: 5% 5% 5% 9%;
+
   display: flex;
   justify-content: center;
   flex-direction: row;
+
   gap: 5%;
 }
 
+ladoEsquerdo
+
 #produtos{
+  border: 3px solid #30166b;
   margin-top: 10%;
   margin-left: -15%;
-  border: 2px solid #30166b;
   border-radius: 20px;
+  height: 55vh;
+}
+
+.imagenzinha{
+  margin-top: 3%;
+}.img1{
+  border: 3px solid #30166b;
+  margin-left: 5%;
+  height: 90px;
+  border-radius: 20px;
+}.imgItem{
+  border: 3px solid #30166b;
+  border-radius: 20px;
+  margin-left: -15%;
+  width: 21%;
+  height: 90px;
 }
 
 .informacoes h1{
@@ -174,9 +196,48 @@ main {
   flex-direction: column;
   justify-content: center;
   margin-top: 10%;
+  margin-bottom: 10%;
   font-size: 450%;
   font-family: "Lora", serif;
   font-weight: 50;  
+}
+
+.precos{
+  margin-bottom: 5%;
+}.preco-antigo{
+  color: #30166ba1;
+  font-size: 150%;
+}.preco-produto{
+  color: #30166b;
+  font-size: 200%;
+}
+.contador{
+  background-color: #00000063;
+  width: 40%;
+  height: 4vh;
+  margin-bottom: 11%;  
+}
+
+.botaoSaiba{
+  margin-bottom: 9%;  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}.saibaMais{
+  border: 2px solid #f1f1f1; 
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Sombra embaixo */
+  
+  width: 83%;
+  height: 4vh;
+  margin: 2%;
+
+  border-radius: 20px;
+  background-color: #30166b;
+
+  color: #F2D561;
+  font-size: 120%;
+  font-family: "Poppins", sans-serif;
 }
 
 .formasPagamento{
@@ -185,4 +246,6 @@ main {
   justify-content: center;
   height: 65px;
   font-weight: 30px;
+  margin-bottom: 10%;
 }
+
