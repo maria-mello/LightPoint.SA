@@ -6,7 +6,7 @@
     <title>Ligth-Point</title>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    
 
     <!-- fonte do títulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,12 +54,12 @@
                     <div class="formCadastro">
                         <h2> Cadastro </h2>
                         <form>
-                            <input type="text" placeholder="Nome">
-                            <input type="text" placeholder='CPF'>
-                            <input type="email" placeholder="E-mail">
-                            <input type="password" placeholder="Senha">
+                            <input type="text" placeholder="Nome" id="nome-input">
+                            <input type="text" placeholder='CPF'id="cpf-input">
+                            <input type="email" placeholder="E-mail"id="email-input">
+                            <input type="password" placeholder="Senha"id="senha-input">
                             <input type="password" placeholder="Confirme sua senha">
-                            <button type="button" class="cadastrarButton"> Cadastrar </button>
+                            <button id="add-btn" type="button" class="cadastrarButton"> Cadastrar </button>
                         </form>
                     </div>
 
@@ -71,6 +71,9 @@
                 </div>
             </div>
     </section>
+    
+    
+    <script src="script.js" defer></script>
 </body>
 
 </html>
